@@ -1,0 +1,26 @@
+.empty {
+  margin: 10px;
+  background-color: #fff6f3b6;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+  color: #fe5d42;
+  font-size: x-large;
+  border: 2px dashed #fe5d42;
+  border-radius: 25px;
+  transition: 4s ease-in-out;
+}
+.empty p:hover {
+  font-size: xx-large;
+  color: #fe5e424d;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 1000px;
+}
+.products {
+  width: 100%;
+}
