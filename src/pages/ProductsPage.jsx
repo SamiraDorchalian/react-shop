@@ -10,6 +10,7 @@ import Loader from "./../components/Loader";
 import {
   createQueryObject,
   filterProducts,
+  getInitialQuery,
   searchProducts,
 } from "../helper/helper";
 
@@ -26,10 +27,13 @@ function ProductsPage() {
 
   useEffect(() => {
     setDisplayed(products);
+    setQuery(getInitialQuery(searchParams));
   }, [products]);
 
   useEffect(() => {
     setSearchParams(query);
+    setSearch(query.search || "");
+
     let finalProducts = searchProducts(products, query.search);
     finalProducts = filterProducts(finalProducts, query.category);
     setDisplayed(finalProducts);
