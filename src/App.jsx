@@ -26,5 +26,6 @@ function App() {
 
 export default App;
 
+// https://fakestoreapi.com استفاده از api فیک
 //ترکیب useState , Context + useReducer ,context , همچنین استفاده از axios
 // استفاده از react-loader-spinner و react-router-dom برای ایجاد لوودر و صفحات داینامیک

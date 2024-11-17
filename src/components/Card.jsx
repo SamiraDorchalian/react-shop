@@ -13,7 +13,7 @@ function Card({ data }) {
   console.log(state);
 
   const clickHandler = () => {
-    dispatch({ type: "ADD_ITEM", payload: data });
+    dispatch({ type: "REMOVE_ITEM", payload: data });
   };
 
   return (
